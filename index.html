@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ на тиждень</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1 class="title">Список справ на тиждень</h1>
+        <div class="new-task">
+            <div class="new-task-div-title">
+                <p class="new-task-title">Створити нову задачу:</p>
+            </div>
+            <div class="new-task-div">
+                <div class="div-1-new-task">
+                    <input type="text" class="new-task-inp" placeholder="Введіть нову задачу...">
+                    <button class="btn-new-task" onclick="button()">Додати</button>
+                </div>
+                <div class="div-2-new-task">
+                    <div class="day-new" id="monday-new" onclick="modayNew()">
+                        <p class="title-day-new">Понеділок</p>
+                    </div>
+                    <div class="day-new" id="tuesday-new" onclick="tuesdayNew()">
+                        <p class="title-day-new">Вівторок</p>
+                    </div>
+                    <div class="day-new" id="wednesday-new" onclick="wednesdayNew()">
+                        <p class="title-day-new">Середа</p>
+                    </div>
+                    <div class="day-new" id="thursday-new" onclick="thursdayNew()">
+                        <p class="title-day-new">Четвер</p>
+                    </div>
+                    <div class="day-new" id="friday-new" onclick="fridayNew()">
+                        <p class="title-day-new">П'ятниця</p>
+                    </div>
+                    <div class="day-new" id="saturday-new" onclick="saturdayNew()">
+                        <p class="title-day-new">Субота</p>
+                    </div>
+                    <div class="day-new" id="sunday-new" onclick="sundayNew()">
+                        <p class="title-day-new">Неділя</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-task">
+            <div class="title-table">
+                <h2 class="title-h2">Список справ на тиждень:</h2>
+            </div>
+            <div class="div-list-days">
+                <div class="day" id="monday">
+                    <div class="title-day-div">
+                        <p class="title-day">Понеділок</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+                <div class="day" id="tuesday">
+                    <div class="title-day-div">
+                        <p class="title-day">Вівторок</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+                <div class="day" id="wednesday">
+                    <div class="title-day-div">
+                        <p class="title-day">Середа</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+                <div class="day" id="thursday">
+                    <div class="title-day-div">
+                        <p class="title-day">Четвер</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+                <div class="day" id="friday">
+                    <div class="title-day-div">
+                        <p class="title-day">П'ятниця</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+                <div class="day" id="saturday">
+                    <div class="title-day-div">
+                        <p class="title-day">Субота</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+                <div class="day" id="sunday">
+                    <div class="title-day-div">
+                        <p class="title-day">Неділя</p>
+                    </div>
+                    <div class="div-list">
+                        <ul class="list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
